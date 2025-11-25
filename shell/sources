@@ -1,0 +1,34 @@
+#!/bin/sh
+
+#[[ -r ~/.plugins/znap/znap.zsh ]] || git clone --depth 1 -- https://github.com/marlonrichert/zsh-snap.git ~/.plugins/znap
+
+#source ~/.plugins/znap/znap.zsh
+
+#znap source marlonrichert/zsh-autocomplete
+#znap source zsh-users/zsh-syntax-highlighting
+#znap source zsh-users/zsh-autosuggestions
+#znap source marlonrichert/zcolors
+#znap source mrjohannchang/zsh-interactive-cd
+#znap eval zcolors "zcolors ${(q)LS_COLORS}"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/node@22/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@22/include"
+export HOMEBREW_NO_ENV_HINTS=true
+
+eval "$(atuin init zsh)"
+eval "$(zoxide init zsh --cmd cd)"
+
+
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/Nickael/ohmyposh.theme/master/.nr.nordic.k2.win.omp.json')"
+
+export VAGRANT_DEFAULT_PROVIDER="virtualbox"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
