@@ -28,4 +28,5 @@ export PATH="$PATH:/Users/nr/.lmstudio/bin"
 # End of LM Studio CLI section
 
 eval "$(rbenv init -)"
+export TERM="wezterm"
 

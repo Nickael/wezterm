@@ -109,6 +109,8 @@ alias sz="source ~/.zshrc"
 alias vimrc="vi ~/.vimrc"
 alias vi="vim"
 
+alias vg=vagrant
+
 # nordvpn aliases
 if hash nordvpn 2> /dev/null; then
     alias nc="nordvpn c"
