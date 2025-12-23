@@ -118,4 +118,4 @@ if hash nordvpn 2> /dev/null; then
 fi
 
 alias q="exit"
-
+alias ccze="logalize"
