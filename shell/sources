@@ -53,7 +53,7 @@ eval "$(pyenv init - zsh)"
 export FURY_API_TOKEN="1XKQ8T-qp1TSm17fnzMej59WAXe03nLtI"
 export WEZTERM_THEME="dark"
 
-. "$HOME/.local/bin/env"
+# . "$HOME/.local/bin/env"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

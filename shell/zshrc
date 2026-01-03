@@ -26,4 +26,11 @@ export PATH="$PATH:/Users/nr/.lmstudio/bin"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+export TERM="wezterm"
 
+#eval "$(rbenv init -)"
+#export PYENV_ROOT="$HOME/.pyenv"
+#[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init - zsh)"
+#
+export PAGER="less -RF"

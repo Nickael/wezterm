@@ -42,6 +42,10 @@ config.window_frame = {
   border_bottom_color = '#1E2128',
   border_top_color = '#1E2128',
 }
+config.inactive_pane_hsb = {
+	saturation = 1,
+	brightness = 1,
+}
 config.keys = {
   { key = "e", mods = "CTRL|SHIFT", action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
   { key = "o", mods = "CTRL|SHIFT", action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }) },
