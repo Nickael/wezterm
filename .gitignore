@@ -1,4 +1,41 @@
-.DS_Store
-**/*.zwc
+# ------------------------------------------------------------------------------
+# Dynamically Cloned Directories
+# ------------------------------------------------------------------------------
+# Ignore the Oh My Posh theme cloned by tools/install.sh
+shell/theme/
 
+# ------------------------------------------------------------------------------
+# Backup Files
+# ------------------------------------------------------------------------------
+# Ignore any timestamped backups created by the script or text editors
+*_bak_*
+*.bak
+*~
 *.swp
+*.swo
+*.zwc
+
+# ------------------------------------------------------------------------------
+# macOS Specific Files
+# ------------------------------------------------------------------------------
+# Prevent Finder settings and metadata from being committed
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ------------------------------------------------------------------------------
+# Zsh Compiled & Cache Files
+# ------------------------------------------------------------------------------
+# Ignore compiled Zsh scripts and completion dumps
+*.zwc
+.zcompdump*
+.zsh_history
+
+# ------------------------------------------------------------------------------
+# Editor & IDE Workspaces
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
