@@ -116,6 +116,7 @@ if hash nordvpn 2> /dev/null; then
     alias nc="nordvpn c"
     alias nd="nordvpn d"
 fi
+alias ..="cd .."
 
 alias q="exit"
 alias ccze="logalize"
