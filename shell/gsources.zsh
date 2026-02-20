@@ -41,7 +41,7 @@ eval "$(zoxide init zsh --cmd cd)"
 
 # Note: Using ~ in paths for root will point to /var/root.
 # Ensure the config file exists there if you want the same theme.
-export POSH_THEME="~/Workspaces/github/ohmyposh.theme/_Nordic_2026.omp.json"
+export POSH_THEME="$HOME/.poshies/_Nordic_2026.omp.json"
 
 eval "$(oh-my-posh init zsh --config $POSH_THEME)"
 

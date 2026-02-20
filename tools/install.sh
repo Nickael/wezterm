@@ -4,13 +4,13 @@ set -e
 
 # --- Main Repo Config ---
 REPO_URL="https://github.com/nickael/wezterm.git"
-TARGET_DIR="$HOME/Workspaces/_perso/wezterm"
+TARGET_DIR="$HOME/.dotfiles"
 SHELL_DIR="$TARGET_DIR/shell"
 ZSHRC_SOURCE="$SHELL_DIR/zshrc.zsh"
 
 # --- Theme Repo Config ---
 THEME_REPO_URL="https://github.com/Nickael/ohmyposh.theme.git"
-THEME_DIR="$SHELL_DIR/theme"
+THEME_DIR="$HOME/.poshies"
 
 # --- Datetime for Backups ---
 CURRENT_DATETIME=$(date +"%Y%m%d_%H%M%S")
