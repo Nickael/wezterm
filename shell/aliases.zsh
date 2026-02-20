@@ -1,7 +1,6 @@
 #!/bin/sh
 
 os_name=$(uname -s)
-os_release=$(lsb_release -si 2>/dev/null)
 
 # check if she is linux to be able to use apt or yum
 if [[ "$os_name" == "Linux" ]]; then
@@ -84,8 +83,18 @@ fi
 
 if hash nvim 2> /dev/null; then
     alias n="nvim"
+    alias ne="nvim"
 fi
 
+if hash vagrant 2> /dev/null; then
+    alias vg=vagrant
+fi
+
+# nordvpn aliases
+if hash nordvpn 2> /dev/null; then
+    alias nc="nordvpn c"
+    alias nd="nordvpn d"
+fi
 
 alias l="ls"
 alias ll="ls -l"
@@ -107,15 +116,7 @@ alias sz="source ~/.zshrc"
 alias vimrc="vi ~/.vimrc"
 alias vi="vim"
 
-alias vg=vagrant
-
-# nordvpn aliases
-if hash nordvpn 2> /dev/null; then
-    alias nc="nordvpn c"
-    alias nd="nordvpn d"
-fi
 alias ..="cd .."
 
 alias q="exit"
 alias ccze="logalize"
-alias ne="nvim"
